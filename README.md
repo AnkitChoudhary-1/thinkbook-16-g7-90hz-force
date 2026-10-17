@@ -55,13 +55,21 @@ Checksums and decoded details are included in [SHA256SUMS.txt](SHA256SUMS.txt) a
 - Confirm the active internal panel identifier and resolution. Stop if they do not match the intended hardware above.
 - A selectable mode, a Windows refresh-rate readout, or an absence of flicker does not establish that every requested frame is being displayed.
 
-## Importing a profile
+## Applying a profile in Windows
 
-1. Open CRU with administrator permission and select the correct active panel.
-2. Import **one** profile. Confirm that the **60 Hz timing remains first**, followed by the chosen experimental rate.
-3. Save with **OK**, then reload the graphics driver using CRU's restart utility.
-4. In Windows **Settings → System → Display → Advanced display**, try the listed rate temporarily.
-5. Revert immediately for flickering, lines, corruption, or blanking. If the mode is absent, stop rather than assuming it must be forced.
+These steps describe an experimental configuration, not a supported upgrade. Read the disclaimer and recovery section first.
+
+1. **Download and extract the files.** On this repository's main page, choose **Code → Download ZIP** and extract it. The `.bin` files are in `profiles/`. Separately download and extract CRU from the official developer link above. Do not save a GitHub HTML preview page and rename it `.bin`.
+2. **Check your panel.** Open `CRU.exe`, handle the administrator prompt, and select the internal display marked **(active)**. Confirm its identifier is **LEN9156** and its resolution is **1920 × 1200**. Stop for a mismatch; the laptop name alone is insufficient.
+3. **Start at 60 Hz and back up.** Set Windows to 60 Hz, save your open work, and use CRU's **Export…** button to save your own existing configuration somewhere outside the downloaded folder.
+4. **Import one profile.** Click **Import…** and choose `profiles/70hz-native-sync-test.bin` for the first experiment. The other options are `75hz-native-sync-test.bin` and `90hz-native-sync-test.bin`. Each file replaces the custom timing; importing them in sequence does not accumulate all three rates.
+5. **Check the order before saving.** Under detailed resolutions, the original **~60.01 Hz timing must remain first**, with the chosen custom rate second. Keep both at **1920 × 1200**, then click **OK** to save. Do not move the experimental mode into the preferred position.
+6. **Reload the driver.** From the extracted CRU folder, run **`restart64.exe` on 64-bit Windows**, or the appropriate restart utility supplied by CRU for your system. Handle any administrator prompt. The display may briefly go black. If it fails to return, stop and use the recovery instructions below.
+7. **Select the rate in Windows.** Open **Settings → System → Display → Advanced display**, select the internal display, and use **Choose a refresh rate** to select the imported rate. Importing a file alone does not apply its custom refresh rate.
+8. **Use the confirmation timeout.** Inspect the image before choosing **Keep changes**. For flickering, lines, corruption, or blanking, choose **Revert** if visible, or let the Windows confirmation timer expire. A successful visual check does not establish frame delivery or long-term safety.
+9. **Check before advancing.** Only consider the next profile after checking the current one. If a rate is missing, verify the selected panel, imported file, and driver reload. Stop if it is still absent; these files cannot guarantee that the driver or panel supports that mode.
+
+If you open an individual `.bin` on GitHub instead of downloading the ZIP, use its **Download raw file** option. The downloaded profiles are each **128 bytes**; compare their SHA-256 hashes with `SHA256SUMS.txt` if needed.
 
 Do not assume the driver will preserve a recovery mode merely because it is in this file. Establish a recovery route before changing anything.
 
