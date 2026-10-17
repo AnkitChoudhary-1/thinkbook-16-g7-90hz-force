@@ -1,0 +1,128 @@
+{
+  "intended_panel_id": "LEN9156",
+  "laptop_observed": "Lenovo ThinkBook 16 G7 ARP (21MW)",
+  "manufacturer_rated_refresh_hz": 60,
+  "advertised_vertical_range_hz": {
+    "minimum": 40,
+    "maximum": 60
+  },
+  "validation_scope": "File integrity and decoded timings only; not panel compatibility, frame delivery, lifetime, or safety.",
+  "profiles": [
+    {
+      "path": "profiles/70hz-native-sync-test.bin",
+      "bytes": 128,
+      "sha256": "1d363c7affa3b16b137a9507251fdf68f4eaaab722573ba3e5cfd959acade151",
+      "edid_checksum_valid": true,
+      "preferred_timing": {
+        "width": 1920,
+        "height": 1200,
+        "refresh_hz": 60.010059,
+        "pixel_clock_mhz": 157.5,
+        "horizontal_total": 2120,
+        "vertical_total": 1238,
+        "horizontal_front_porch": 108,
+        "horizontal_sync_width": 48,
+        "vertical_front_porch": 10,
+        "vertical_sync_width": 10,
+        "sync_flags": 24
+      },
+      "additional_timing": {
+        "width": 1920,
+        "height": 1200,
+        "refresh_hz": 70.000305,
+        "pixel_clock_mhz": 183.72,
+        "horizontal_total": 2120,
+        "vertical_total": 1238,
+        "horizontal_front_porch": 108,
+        "horizontal_sync_width": 48,
+        "vertical_front_porch": 10,
+        "vertical_sync_width": 10,
+        "sync_flags": 24
+      }
+    },
+    {
+      "path": "profiles/75hz-native-sync-test.bin",
+      "bytes": 128,
+      "sha256": "780859f1ff35c9e696f216302883f5e5c4c183a94cf6016bcd38d9829e8ceaa1",
+      "edid_checksum_valid": true,
+      "preferred_timing": {
+        "width": 1920,
+        "height": 1200,
+        "refresh_hz": 60.010059,
+        "pixel_clock_mhz": 157.5,
+        "horizontal_total": 2120,
+        "vertical_total": 1238,
+        "horizontal_front_porch": 108,
+        "horizontal_sync_width": 48,
+        "vertical_front_porch": 10,
+        "vertical_sync_width": 10,
+        "sync_flags": 24
+      },
+      "additional_timing": {
+        "width": 1920,
+        "height": 1200,
+        "refresh_hz": 74.999238,
+        "pixel_clock_mhz": 196.84,
+        "horizontal_total": 2120,
+        "vertical_total": 1238,
+        "horizontal_front_porch": 108,
+        "horizontal_sync_width": 48,
+        "vertical_front_porch": 10,
+        "vertical_sync_width": 10,
+        "sync_flags": 24
+      }
+    },
+    {
+      "path": "profiles/90hz-native-sync-test.bin",
+      "bytes": 128,
+      "sha256": "f6d97bbc9f2ab73fd3a52701be52fcad205e74d127afa5c6b5523a0847bb509f",
+      "edid_checksum_valid": true,
+      "preferred_timing": {
+        "width": 1920,
+        "height": 1200,
+        "refresh_hz": 60.010059,
+        "pixel_clock_mhz": 157.5,
+        "horizontal_total": 2120,
+        "vertical_total": 1238,
+        "horizontal_front_porch": 108,
+        "horizontal_sync_width": 48,
+        "vertical_front_porch": 10,
+        "vertical_sync_width": 10,
+        "sync_flags": 24
+      },
+      "additional_timing": {
+        "width": 1920,
+        "height": 1200,
+        "refresh_hz": 89.999848,
+        "pixel_clock_mhz": 236.21,
+        "horizontal_total": 2120,
+        "vertical_total": 1238,
+        "horizontal_front_porch": 108,
+        "horizontal_sync_width": 48,
+        "vertical_front_porch": 10,
+        "vertical_sync_width": 10,
+        "sync_flags": 24
+      }
+    },
+    {
+      "path": "profiles/60hz-recovery.bin",
+      "bytes": 128,
+      "sha256": "33364eadf98aa58dc02d861703e12979a4b3c280c730e03806bc369583a50a5a",
+      "edid_checksum_valid": true,
+      "preferred_timing": {
+        "width": 1920,
+        "height": 1200,
+        "refresh_hz": 60.010059,
+        "pixel_clock_mhz": 157.5,
+        "horizontal_total": 2120,
+        "vertical_total": 1238,
+        "horizontal_front_porch": 108,
+        "horizontal_sync_width": 48,
+        "vertical_front_porch": 10,
+        "vertical_sync_width": 10,
+        "sync_flags": 24
+      },
+      "additional_timing": null
+    }
+  ]
+}
